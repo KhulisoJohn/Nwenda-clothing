@@ -1,0 +1,391 @@
+
+/* =============================GENERAL STYLING============================ */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* =======================HEADER SECTION================================ */
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+
+  .logo {
+    display: flex;
+    padding: 0 2px;
+  }
+  
+  #header-img {
+    border-radius: 50%;
+  }
+
+  .title {
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  #nav-bar{
+    display: flex;
+    margin-left: 5rem ;
+  }
+  .nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0 2rem;
+  }
+
+  .nav-link {
+    color: white;
+    padding: 0 2rem;
+    text-decoration: none;
+  }
+
+  .mobile-menu {
+    display: none;
+
+  }
+ 
+/*---------------------HEADER-Breakpoint-----------------------*/
+
+@media only screen and (max-width: 1000px){
+  .nav-link{
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width:768px){
+  .nav-link{
+    padding: 0 0.7rem;
+  }
+  .title{
+    font-size: 1.2rem;
+    padding-top:7px;
+  }
+}
+
+  @media only screen and (max-width: 768px) {
+    .mobile-menu {
+      display: block;
+    }
+  
+    #nav-bar {
+      display: none;
+    }
+  .open-close {
+    position: fixed;
+    right: 10px;
+    top: 35px;
+ 
+}
+
+span i{
+  font-size: 2rem;
+  
+}
+
+  .nav-links{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    list-style: none;
+    text-align:center;
+    background-color: #333;
+    padding: 16rem 0;
+    display: none;
+    transition: left 0.3s ease-in-out;
+    z-index: -1000;
+  }
+  
+  .nav-links li {
+   padding: 1.2rem 0;
+    
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 23px;
+    display: block;
+  }
+}
+     
+
+
+
+  /*===================HOME SECTION======================== */
+
+  #home {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: darken;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-image 1s ease-in-out;
+  }
+
+  .subtitle {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 3rem;
+    
+  }
+
+  #home p {
+    text-align: center;
+    margin: 2rem 5rem;
+    color: #f4f4f4;
+    font-size: 1.4rem;
+  }
+
+   #form {
+    padding-top: 2rem;
+    text-align: center;
+  
+   }
+
+   /*----------------------HOME-BREAKPOINT---------------------------------*/
+
+
+
+   /*======================FEATURES SECTION===========================*/
+   
+  #Features {
+    padding: 10rem 4rem;
+    text-align: center;
+
+  }
+
+  #feature_cont,.contact-content {
+    background-color: bisque;
+    border: solod 1px bisque;
+    border-radius: 1rem;
+  }
+
+  .text_section {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .video_section {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  
+  .vid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
+  }
+
+
+  /*------------------------FEATURES-BREAKPOIN---------------------*/
+
+
+
+
+
+  /*================= COLLECTIONS SECTION ================= */
+
+  #collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /*flex-direction: row;*/
+    background-color: bisque;
+    padding: 9rem 2rem 5rem 2rem;
+  }
+
+  .items {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    text-align: center;
+    border-radius: 2%;
+    height:35rem;
+    background-color: aliceblue;
+   
+  }
+
+
+  .items img {
+    width: 90%;
+    height: 80%;
+    border-radius: 2%;
+    transition: transform 0.3s ease;
+  }
+
+
+  .items img:hover {
+    transform: scale(1.2);
+  }
+
+
+  /*---------------------------C0LLECTION-BREAKPOINT-----------------------------*/
+  @media only screen and (max-width: 1100px){
+    .items {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .items {
+      flex: 1 1 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+    }
+  }
+
+
+  /*===================================CONTACT STYLING=========================================*/
+#contact {
+ padding: 10rem 5rem 5rem 5rem;
+}
+
+.contact-content p {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.form-input{
+  width: 90%;
+  margin-left: auto;
+  margin-top: 16px;
+
+}
+.contact-form label {
+  text-align: start;
+  
+}
+  .contact-form input, .contact-form textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 2px;
+   resize: vertical;
+}
+
+.contact-form .submit {
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/*----------------------------------------CONTACT-BREAKPOINT--------------------------------------*/
+ 
+
+/*====================================== FOOTER STYLING ==========================================*/
+.footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 0 5rem;
+}
+
+.footer .address {
+  padding-bottom: 2rem;
+}
+
+a i{
+  color: white;
+  font-size: 2rem;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+/*---------------------------------FOOTER-BREAKPOINT------------------------*/
+@media only screen and (max-width: 600px){
+  .footer {
+    display: block;
+    align-items: center;
+    padding-top: 2rem;
+  }
+}
+
+
+
+/*=============================CATALOGUE===============================*/
+.container {
+  max-width: 100%; /* Adjust width based on design */
+  margin: 0 auto; /* Centers the container */
+  padding:  7rem 20px 3rem 20px;
+  background-color: bisque;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.item {
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  height: auto;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.item img {
+  width: 100%; /* Ensures images fit inside their container */
+  height: auto;
+  border-radius: 5px;
+}
+
+/*--------------------CATALOGUE-BREAKPOINT----------------------*/
+
+@media only screen and (max-width: 1000px){
+   .item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+   }
+}
+
+@media only screen and (max-width: 768px){
+  .item {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
