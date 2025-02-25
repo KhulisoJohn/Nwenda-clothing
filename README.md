@@ -5,7 +5,7 @@ Welcome to Nwenda Clothing! This project is a simple, clean, and modern landing 
 ## Live Demo
 
 You can view the live version of this landing page at:  
-[Nwenda Clothing Landing Page](https://nwendaclothing.netlify.app/)
+[Nwenda Clothing Landing Page](https://khulisojohn.github.io/Nwenda-clothing/)
 
 ## Features
 
